@@ -1,5 +1,6 @@
 
-import { Client } from 'pg';
+const { Client } = require('pg');
+
 
 
 const client = new Client({
@@ -27,5 +28,4 @@ async function connectDB() {
 
 connectDB();
 
-
-export default client;
+module.exports = client;
